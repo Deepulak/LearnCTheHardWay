@@ -1,0 +1,78 @@
+Valgrind is a software for finding errors or bugs on C program
+
+%ld for long decimal
+%e for secinific equation
+'\0' is a nulbyte character or zero itself
+%% means a single % percentage will be print
+
+starting with ex8
+
+The format of a for-loop is this:
+for(INITIALIZER; TEST; INCREMENTER) {
+CODE;
+}
+
+Here's how the for-loop works:
+The INITIALIZER is code that is run to setup the loop, in this
+case i = 0 .
+Next the TEST boolean expression is checked, and if it's false
+(0) then CODE is skipped, doing nothing.
+The CODE runs, does whatever it does.
+After the CODE runs, the INCREMENTER part is run, usually
+incrementing something, like in i++ .
+MAIN
+PREVIOUS
+NEXT
+HELP
+Follow
+@lzsthwincrementing something, like in i++ .
+And it continues again with Step 2 until the TEST is false (0).
+This for-loop is going through the command line arguments using
+argc and argv like this:
+The OS passes each command line argument as a string in the
+argv array. The program's name (./ex10) is at 0, with the rest
+coming after it.
+The OS also sets argc to the number of arguments in the argv
+array so you can process them without going past the end.
+Remember that if you give one argument, the program's name is
+the first, so argc is 2.
+The for-loop sets up with i = 1 in the initializer.
+It then tests that i is less than argc with the test i < argc .
+Since initially $1 < 2$ it will pass.
+It then runs the code which just prints out the i and uses i to
+index into argv .
+The incrementer is then run using the i++ syntax, which is a
+handy way of writing i = i + 1 .
+This then repeats until i < argc is finally false (0) when the
+loop exits and the program continues on.
+
+start on ex14 
+
+type *ptr
+"a pointer of type named ptr"
+*ptr
+"the value of whatever ptr is pointed at"
+*(ptr + i)
+"the value of (whatever ptr is pointed at plus i)"
+&thing
+"the address of thing"
+type *ptr = &thing
+"a pointer of type named ptr set to the address of thing"
+ptr++
+"increment where ptr points"
+
+
+The format of a function pointer goes like this:
+int (*POINTER_NAME)(int a, int b)
+
+CPP - C Pre Processor
+# - octothorpe
+
+start on ex19
+The Game Implementation
+
+we need to write the full game implementation code i'm not doint it 
+for some reason
+
+start on ex21
+
